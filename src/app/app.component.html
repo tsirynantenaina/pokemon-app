@@ -1,0 +1,26 @@
+<nav>
+    <div class="nav-wrapper teal">
+        <a href="#" class="brand-logo center">
+            Pokedex
+        </a>
+
+        <label style="min-width: 20px ; font-size: 10px;" *ngIf="auth.isLoggedIn" href="#" (click)="auth.logout()" class="brand-logo right">
+            Se deconnecter
+        </label>
+
+    </div>
+</nav>
+<router-outlet></router-outlet>
+
+
+
+
+<!---
+<input
+    #input 
+    (keyup.enter)="selectPokemon(input.value)"
+     type="number"   
+/>
+<p *ngIf="pokemonSelected">{{ pokemonSelected.name }}</p>
+<p *ngIf="!pokemonSelected">rien de pokemon </p>
+-->
